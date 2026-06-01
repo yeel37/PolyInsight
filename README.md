@@ -4,6 +4,7 @@
 > 无需钱包、无需登录，纯公开 API + 本地 AI 分析，帮你每天追踪全球最聪明资金在赌什么。
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org/)
+[![Python tests](https://github.com/yeel37/PolyInsight/actions/workflows/python-tests.yml/badge.svg)](https://github.com/yeel37/PolyInsight/actions/workflows/python-tests.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **真实价值**：每天 30 秒掌握 Polymarket 最新概率、成交量、流动性风险，AI 给出可执行洞察，导出报告用于研究或交易决策。完美用于 GitHub 档案和 OpenAI Codex 申请。
@@ -24,7 +25,7 @@
 ## 🚀 5 分钟快速上手
 
 ```bash
-git clone https://github.com/你的用户名/PolyInsight.git
+git clone https://github.com/yeel37/PolyInsight.git
 cd PolyInsight
 
 python3 -m venv .venv
@@ -68,6 +69,19 @@ streamlit run app/streamlit_app.py
 - 想看特定分类？CLI 加 `--tag Politics` 或在代码中扩展
 - 启用 AI 解读：设置 `OPENAI_API_KEY` 环境变量后重启
 - 生产使用：可扩展抓取历史价格（CLOB / Data API），当前版本已足够日常研究
+
+## 🧪 验证与测试
+
+```bash
+python -m pytest tests/ -v
+python -m polyinsight.cli --limit 2
+```
+
+GitHub Actions 会在每次 push 和 pull request 时自动运行测试，状态可在仓库顶部徽章查看。
+
+## 🗓️ 更新日志
+
+项目维护记录见 [CHANGELOG.md](CHANGELOG.md)。
 
 ---
 
