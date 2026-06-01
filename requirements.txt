@@ -1,0 +1,8 @@
+# PolyInsight 依赖
+requests>=2.31.0
+pandas>=2.0.0
+plotly>=5.18.0
+streamlit>=1.32.0
+python-dotenv>=1.0.0
+openai>=1.30.0   # 可选 AI 分析
+pytest>=7.4.0
